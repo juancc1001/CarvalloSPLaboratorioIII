@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+    <title>Segundo Parcial - Carvallo</title>
+</head>
+<body>
+    <body>
+        <div id="divPrincipal">
+            <div id="divSpinner" class="spinner" hidden></div>
+            <div id="divForm">
+                <h1>ABM PERSONAS</h1>
+                <form>
+                    <input type="number" hidden="true" id="inputId">
+                    <label for="inputName" >Nombre</label><input type="text" class="inputs" placeholder="Nombre" id="inputNombre"><br>
+                    <label for="inputApellido" >Apellido</label><input type="text" class="inputs" placeholder="Apellido" id =inputApellido>
+                    <label for="inputEdad" >Edad</label><input type="text" class="inputs" placeholder="Edad" id =inputEdad>
+                    <br>
+                    <label for="radioSexo" >Sexo:</label><br>
+                    <input type="radio" name="rSexo" id="rMasculino"><label for=rMasculino>Masculino</label><br>
+                    <input type="radio" name="rSexo" id="rFemenino"><label for=rFemenino>Femenino</label><br> 
+                    <button type="button" id="btnAgregar">Agregar</button>
+                    <button type="button" id="btnEliminar">Eliminar</button>
+                    <button type="button" id="btnEliminarStorage">Eliminar Localstorage</button>
+                </form>
+            </div>
+            <div id='divFiltros'>
+                <h1>Filtros</h1>
+                <label for="selectFiltros">Filtrar por:</label>
+                <select id="selectFiltros">
+                    <option value="no filtrar" selected=true>No filtrar</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="masculino">Femenino</option>
+                </select><br><br>
+                <label for='promEdad' >Promedio de edad:</label><input id='promEdad' type='text' disabled>
+                <button type="button" id="btnPromedio">Obtener edad promedio</button>
+            </div>
+            <div id='divCamposMostrados'>
+                <h1>Campos Mostrados</h1>
+                <p>Tildar los campos a mostrar</p>
+                <label><input type="checkbox" id="cboxId" >Id</label>
+                <label><input type="checkbox" id="cboxNombre">Nombre</label>
+                <label><input type="checkbox" id="cboxEdad">Edad</label>
+                <label><input type="checkbox" id="cboxApellido">Apellido</label>
+            </div>
+            <div id="divGrilla">
+                <h1>Lista de personas</h1><br>
+                <table id="table">
+                    <tr>
+                        <th>ID</th><th>Nombre</th><th>Apellido</th><th>Edad</th><th>Sexo</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</body>
+</html>

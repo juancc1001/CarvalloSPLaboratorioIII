@@ -1,0 +1,160 @@
+#divPrincipal
+{
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+#divGrilla
+{   
+    display: flex;
+    position:relative;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+    width:100%;
+}
+
+#divForm
+{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    padding-left: 5rem;
+    border-style:solid;
+    border-color: gray;
+    width: 100%;
+}
+
+#divFiltros
+{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    padding-left: 5rem;
+    border-style:solid;
+    width: 100%;
+    margin: .2rem;
+    border-color: gray;
+    justify-content: flex-start;
+}
+
+#divCamposMostrados
+{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    padding-left: 5rem;
+    border-style:solid;
+    width: 100%;
+    margin: .2rem;
+    border-color: gray;
+    justify-content: flex-start;
+}
+
+form
+{
+    padding-bottom: 1rem;
+    width: 90%;
+}
+
+#table
+{
+    border-collapse:collapse;
+    justify-content: center;
+    margin: .2rem;
+    width: 40%;
+}
+
+#btnAgregar
+{
+    background-color: rgb(161, 238, 8);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    border-color: whitesmoke;
+    padding:.7rem 1.3rem;
+}
+
+#btnPromedio
+{
+    background-color: rgb(161, 238, 8);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    border-color: whitesmoke;
+    padding:.5rem;
+}
+
+#btnEliminar
+{
+    background-color: rgba(255, 0, 0, 0.527);
+    border-radius: .5rem;
+    border-color: whitesmoke;
+    margin-left: 2.5rem;
+    padding:.7rem 1.5rem;
+}
+
+#btnEliminarStorage
+{
+    background-color: rgb(211, 0, 0);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    float: right;
+    border-color: white;
+    padding:.7rem 1.3rem;
+}
+
+th
+{
+    background-color: rgb(195, 245, 228);
+    padding: .4rem;
+}
+
+    
+tr
+{
+    border-bottom: .05rem solid rgba(128, 128, 128, 0.479);
+}
+
+td
+{
+    padding: .4rem;
+    background-color: rgb(211, 236, 248);
+    text-align: center;
+}
+
+.inputs
+{
+    margin: .5rem;
+    border-radius: .3rem;
+    padding: .3rem;
+    width: 100%;
+}
+
+.spinner 
+{
+  position: absolute;
+  z-index: 11;
+  margin: auto;
+  width: 100%;
+  top:7rem;
+  height: 100%;
+  opacity: 30%;
+  border: 2rem solid #f3f3f3; 
+  border-top: 2rem solid grey; 
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  animation: spin 2s linear infinite;
+}
+
+#divSpinner{
+    margin: auto;
+}
+
+@keyframes spin
+{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
