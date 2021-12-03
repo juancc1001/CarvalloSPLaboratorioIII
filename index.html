@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/clases.js"></script>
+    <script type="module" src="./js/script.js"></script>
     <title>Segundo Parcial - Carvallo</title>
 </head>
 <body>
@@ -49,10 +50,14 @@
             </div>
             <div id="divGrilla">
                 <h1>Lista de personas</h1><br>
-                <table id="table">
+                <table id='table'>
+                    <thead>
                     <tr>
                         <th>ID</th><th>Nombre</th><th>Apellido</th><th>Edad</th><th>Sexo</th>
                     </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
                 </table>
             </div>
         </div>
